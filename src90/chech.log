@@ -1,0 +1,127 @@
+advx1.F:      if(ldimen .eq. 2) go to 222
+advx1.F:      if(ldimen .eq. 1) go to 111
+advx1.F:       go to 999
+advx1.F:      go to 999
+advx2.F:      if(ldimen .eq. 2) go to 222
+advx2.F:      go to 999
+avisc_d.F:      if(ldimen .eq. 2) go to 222
+avisc_d.F:      if(ldimen .eq. 1) go to 111
+avisc_d.F:      go to 999
+avisc_d.F:      go to 999
+bvalemf.F:      if(ldimen .eq. 1) go to 111
+bvalemf.F:       if(ldimen .ne. 3) go to 111
+bvalemf.F:      if(ldimen .ne. 3) go to 111
+cgsolve.F:      if(mod(nits,2) .ne. 0) go to 10
+eos_d.F:      if(ldimen .eq. 2) go to 222
+eos_d.F:      if(ldimen .eq. 1) go to 111
+eos_d.F:      go to 999
+eos_d.F:      go to 999
+forces_d.F:      if(ldimen .eq. 2) go to 222
+forces_d.F:      if(ldimen .eq. 1) go to 111
+forces_d.F:      go to 999
+forces_d.F:      go to 999
+ggen.F:          go to 31
+ggen.F:          go to 31
+ggen.F:          go to 31
+ggen.F:        if (.not. lgrid) go to 10
+ggen.F:          go to 34
+ggen.F:        go to 34
+ggen.F:          go to 131
+ggen.F:          go to 131
+ggen.F:          go to 131
+ggen.F:        if (.not. lgrid) go to 110
+ggen.F:          go to 134
+ggen.F:        go to 134
+ggen.F:          go to 231
+ggen.F:          go to 231
+ggen.F:          go to 231
+ggen.F:        if (.not. lgrid) go to 210
+ggen.F:          go to 234
+ggen.F:        go to 234
+gravity.F:        go to 1
+gravity.F:        go to 1
+gravity.F:        go to 2
+gravity.F:        go to 2
+gravity.F:        go to 2
+gravity.F:        go to 3
+linpck.F:      if(incx.eq.1)go to 20
+linpck.F:         if(abs(sx(ix)).le.smax) go to 5
+linpck.F:         if(abs(sx(i)).le.smax) go to 30
+linpck.F:      if(incx.eq.1)go to 20
+linpck.F:         if(sx(ix).le.smax) go to 5
+linpck.F:         if(sx(i).le.smax) go to 30
+linpck.F:      if(incx.eq.1)go to 20
+linpck.F:         if(sx(ix).ge.smin) go to 5
+linpck.F:         if(sx(i).ge.smin) go to 30
+linpck.F:      if(incx.eq.1)go to 20
+linpck.F:      if( m .eq. 0 ) go to 40
+linpck.F:      if( n .lt. 6 ) go to 60
+lorentz.F:               go to 40
+lorentz.F:               go to 90
+lorentz.F:              go to 260
+lorentz.F:              go to 310
+lorentz_1D.F:              go to 260
+lorentz_2D.F:               go to 40
+lorentz_2D.F:              go to 260
+lorentz_2D.F:              go to 310
+newgrid.F:      if(incx.eq.1.and.incy.eq.1)go to 20
+newgrid.F:      if( m .eq. 0 ) go to 40
+opac_d.F:       go to 999
+opac_d.F:        go to 999
+opac_d.F:        go to 999
+pdv_d.F:      if(ldimen .eq. 2) go to 222
+pdv_d.F:      if(ldimen .eq. 1) go to 111
+pdv_d.F:      go to 999
+pdv_d.F:      go to 999
+rotor.F:           go to 20
+rotor.F:           go to 20
+rotor.F:          go to 10
+rotor.F:          go to 40
+rotor.F:         go to 30
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 20
+rotor.F:       go to 10
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 40
+rotor.F:       go to 30
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 60
+rotor.F:       go to 50
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 80
+rotor.F:       go to 70
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 20
+rotor.F:       go to 10
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 40
+rotor.F:       go to 30
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 20
+rotor.F:       go to 10
+rotor.F:       if(l2 .gt. l1 .and. l2 .le. l3) go to 40
+rotor.F:       go to 30
+transprt.F:      if(xhydro .eqv. .false.) go to 666
+transprt.F:      go to 777
+transprt_1D.F:      if(xhydro .eqv. .false.) go to 666
+transprt_1D.F:      go to 777
+transprt_2D.F:      if(xhydro .eqv. .false.) go to 666
+transprt_2D.F:      go to 777
+cgsolve.F:      if(glberror.gt.toler) goto 10
+findno.F:        if (msg(iblnk:iblnk) .eq. ' ') goto 20
+findno.F:        if (msg(istrt:istrt) .ne. ' ') goto 100
+findno.F:        if (msg(iend:iend) .eq. ' ') goto 120
+ggen.F:            if (errx1r .lt. 1.0e-6) goto 30
+ggen.F:            if (errx2r .lt. 1.0e-6) goto 130
+ggen.F:            if (errx3r .lt. 1.0e-6) goto 230
+grey_fld.F:        goto 1001
+grey_fld.F:     .         goto 1002
+grey_fld.F:      goto 1
+grey_fld.F:         goto 2
+intchk.F:        if (msg(1:3) .eq. intmsg(i)) goto 20
+lorentz_d.F:      if(ldimen.eq.2) goto 222
+lorentz_d.F:      if(ldimen.eq.1) goto 111
+lorentz_d.F:       goto 999
+lorentz_d.F:       goto 999
+transprt.F:         goto 10
+transprt.F:         goto 10
+transprt.F:         goto 10
+transprt.F:         goto 10
+transprt.F:         goto 10
+transprt.F:         goto 10
+transprt_2D.F:         goto 10
+zeusmp.F:      if (ifsen(1) .eq. 1) goto 2000
+zeusmp.F:      goto 1000  !  Loop back to begin the next time step.

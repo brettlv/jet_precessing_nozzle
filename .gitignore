@@ -1,0 +1,17 @@
+.DS_Store
+*DEBUG*
+*mpd*
+*job*
+*.dat
+*.txt
+*.pro
+*.mod
+*.for
+*.o
+*.x
+hdf*
+res*
+usr*
+zmp_*
+!zmp_inp
+!*.F
